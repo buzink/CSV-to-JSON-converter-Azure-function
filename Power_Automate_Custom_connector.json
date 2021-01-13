@@ -1,0 +1,35 @@
+swagger: '2.0'
+info: {title: CSV to JSON converter, description: Converts a string with CSV-text
+    separated by newlines and semicolons to JSON. The first line is treated as the
+    header and thus the variable names., version: '1.0'}
+host: csv-to-json-xyz.azurewebsites.net
+basePath: /api/csv2json
+schemes: [https]
+consumes: []
+produces: []
+paths:
+  /:
+    post:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: CSV to JSON converter
+      description: Converts a string with CSV-text separated by newlines and semicolons
+        to JSON. The first line is treated as the header and thus the variable names.
+      operationId: CSV2JSON
+      parameters:
+      - name: body
+        in: body
+        required: false
+        schema:
+          type: object
+          properties:
+            csv: {type: string, description: csv}
+      x-ms-visibility: important
+definitions: {}
+parameters: {}
+responses: {}
+securityDefinitions: {}
+security: []
+tags: []
