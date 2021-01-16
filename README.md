@@ -18,7 +18,7 @@ Optionally you can use the function through a custom connector in Power Automate
 1. In Power Automate, go to Data/Custom connectors and click new
 2. Switch on the Swagger editor
 3. Copy paste the configuration code from the Power_Automate_Custom_connector.json file in this repository to your custom connector
-4. Change the url to the url copied from the Azure function
+4. Change the host url to the url copied from the Azure function
 
 ## Usage
 You can set a parameter called csv in a GET query like so 
